@@ -164,28 +164,21 @@ exports =  function(changeEvent) {
 };
 ```
 
-**Note: The url needs to be replaced with your Azure function url from Step 6 of [Set Up Azure Function](#set-up-azure-function)**
-
-![Picture 13](https://user-images.githubusercontent.com/104025201/230365858-ffb65c0d-d177-4da4-91cc-0944a1b8db39.png)
+**Note: The url needs to be replaced with your Azure function url from "Step vi" of [Set Up Azure Function](#set-up-azure-function)**
 
   **v.** Click “*Save*” at the bottom to Save the newly created Trigger. Once Saved, going back to Triggers Home page we can see our newly added Trigger.
 
-Now that the Trigger is enabled, it will watch the *movies* collection for any “*Insert*” operations and trigger our Azure function in the event of the insertion of a document.
-  
-  ![Picture 14](https://user-images.githubusercontent.com/104025201/230365975-2f6a2c69-ef69-45b9-a889-2069238eccb9.png)
+Now that the Trigger is enabled, it will watch the *movies* collection for any “*Insert*”, “*Update*” or “*Delete*” operations and trigger our Azure function in the event of the insertion of a document.
   
 #### Test Real Time Sync
   
-  **i.** Go to Atlas “*Database*” (on left menu) and “*Browse Collections*” against your cluster (Sandbox in the example) and navigate to the “movies” collection the “*sample_mflix*” database and select “*Insert Document*” to insert a document.
-  
-![Picture 15](https://user-images.githubusercontent.com/104025201/230376003-704676d3-4d5e-43ed-b4ab-77b0038b91ee.png)
+  **i.** Go to Atlas “*Database*” (on left menu) and “*Browse Collections*” against your cluster (Sandbox in the example) and navigate to the “movies” collection the “*sample_mflix*” database and select “*Insert Document*” button on right side to insert a document.
 
   **ii.** Copy the below json into the json structure input view “{}” and click “*Insert*” button.
 
 ```
 {"plot":"This  is a test plot.","genres":["Short"],"runtime":1,"cast":["test actor","test actor1"],"num_mflix_comments":0,"title":"Test Movie","fullplot":"This is a test movie and thus no full plot.","countries":["USA"],"released":{"$date":-2418768000000},"directors":["Test Directors"],"rated":"UNRATED","awards":{"wins":1,"nominations":0,"text":"1 win."},"lastupdated":"2015-08-26 00:03:50.133000000","year":1890,"imdb":{"rating":6.2,"votes":1189,"id":5},"type":"movie","tomatoes":{"viewer":{"rating":3.0,"numReviews":184,"meter":32},"lastUpdated":{"$date":1435516449000}}}
 ```
-<img width="380" alt="Picture 16" src="https://user-images.githubusercontent.com/104025201/230376088-67cd0a8e-ada0-445a-8e7c-1b45171ee818.png">
 
 **iii.** Once the document is inserted , you can check in Synapse workspace, Data -> Linked -> Azure Data lake Storage Gen2. You should see a new folder created (_newcreate_ in the example) and a file with the name starting with the file name given in the storage settings in the VS Code (_labsynapse_ in the example).
 Click on the document, it will download on your local machine. Verify that it is the new document we had added to the _movies_ collection.
