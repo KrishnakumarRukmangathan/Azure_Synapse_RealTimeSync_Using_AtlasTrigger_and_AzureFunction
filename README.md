@@ -129,10 +129,8 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
   **v.** Deploy the application again by repeating step 3. You can verify the settings by going to the Azure function and checking the “*Configuration*”  
    tab under the “*Settings*” section.
    
-![Picture 7](images/FcnConfig.png) 
+![Picture 7](images/FcnConfig1.png) 
 
-
- ![Picture 7](https://user-images.githubusercontent.com/104025201/230348513-c941a71f-d26b-4343-9780-442d0c091f3d.png)
  
   **vi.** Note the Azure function url from the deployment logs 
 
