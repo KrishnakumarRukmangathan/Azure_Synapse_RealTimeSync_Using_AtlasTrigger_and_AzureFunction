@@ -141,16 +141,12 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
   
   **i.** Select “*Triggers*” tile under “*SERVICES*” on the left of the Atlas UI. This will open the Trigger Homepage. Select the “*Add Trigger*” button on the top right to create a new trigger for our *movies* collection.
 
- ![Picture 10](images/AtlasTriggers.png)
+ ![Picture 10](images/AtlasTriggers1.png)
   
 
-  **ii.** Let the default “*Database Trigger*” remain so, give a name for the trigger (*LabSynapse* in the example). Link the “*Sandbox*” cluster. Don't change any other settings.
-  
-  ![Picture 11](https://user-images.githubusercontent.com/104025201/230365615-fe3e2082-8354-4f3d-ac88-584c26a16093.png)
+  **ii.** Let the default Trigger Type of “*Database Trigger*” remain so, give a name for the trigger (*LabSynapse* in the example). Link the “*Sandbox*” cluster under "*Link Data Source(s)*". Don't change any other settings under "*TRIGGER DETAILS*" section.
 
-  **iii.** Under “*TRIGGER SOURCE DETAILS*”, Select the “*Cluster Name*” as “*Sandbox*”, “*Database Name*” as “*sample_mflix*” and select the “*Collection Name*” as “*movies*”. Select the Operation Type as “*Insert*” and also Select the “*Full Document*” option.
-  
-![Picture 12](https://user-images.githubusercontent.com/104025201/230365652-7f40426d-5a1f-4cc4-84c9-3ff5d4ab21af.png)
+  **iii.** Under “*TRIGGER SOURCE DETAILS*”, Select the “*Cluster Name*” as “*Sandbox*”, “*Database Name*” as “*sample_mflix*” and select the “*Collection Name*” as “*movies*”. Select the Operation Type as “*Insert Document*”, “*Update Document*” and “*Delete Document*”. Also Select the “*Full Document*” and "*Document Preimage*" options.
 
   **iv.** Let the “*Select An Event Type*” option under “*FUNCTION*” remain selected as “_Function_”. Remove all the sample code and paste the below code in the box.
 
