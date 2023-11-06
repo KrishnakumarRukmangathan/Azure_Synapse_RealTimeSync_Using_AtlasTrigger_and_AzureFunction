@@ -132,11 +132,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 ![Picture 7](images/FcnConfig1.png) 
 
  
-  **vi.** Note the Azure function url from the deployment logs 
-
-![Picture 8](https://user-images.githubusercontent.com/104025201/230348744-627d5ca0-1102-4615-ab96-876afb16a205.png)
-
-  You can also get the function url by navigating to the function in Azure and selecting “*Get Function Url*”.
+  **vi.** Note the Azure function url from the deployment logs. You can also get the function url by navigating to the function in Azure and selecting “*Get Function Url*”.
   
 ![Picture 9](https://user-images.githubusercontent.com/104025201/230349002-abfff2e9-54c8-45aa-84ec-0ddd36ffad1b.png)
 
