@@ -9,8 +9,6 @@ However, currently there is no CDC connector for MongoDB in Synapse to keep the 
 ## Solution Overview:
 This simple solution uses [Atlas triggers](https://www.mongodb.com/docs/atlas/app-services/triggers/) and [functions](https://www.mongodb.com/docs/atlas/app-services/functions/) which abstracts the code needed to set up change streams and take an action based on the change detected.
 
-![Picture 1](https://user-images.githubusercontent.com/104025201/230293199-a7acbd10-1a42-42e8-9491-f1dc0e5fd096.png)
-
 ### Workflow:
 1. Set up a change stream on one of the collections using MongoDB Triggers.
 2. MongoDB function writes the changes captured to Azure functions.
@@ -24,8 +22,8 @@ In this exercise, we will use “sample_mflix.movies” namespace from the sampl
   Register for a new Atlas account [here](https://www.mongodb.com/docs/atlas/tutorial/create-atlas-account/#register-a-new-service-account).   
   Follow steps from 1 to 4 (*Create an Atlas account*, *Deploy a free cluster*, *Add your IP to the IP access list* and *Create Database user*) to set up  the Atlas environment.   
   Also, follow step 7 “*Load Sample Data*” to load sample data to be used in the lab.
-  
-![Picture 2](https://user-images.githubusercontent.com/104025201/230300219-6f95d9be-616f-4267-8cce-e4d3af5d1411.png)
+ 
+![Picture 2](images/Atlas Registration Process.png)
 
 
   **Note: For this lab, add “0.0.0.0/0” to the IP access list so that Synapse can connect to MongoDB Atlas. In production scenarios, It is recommended to use Private link or VNET peering instead of the IP whitelisting.**
