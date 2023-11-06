@@ -49,7 +49,7 @@ In this exercise, we will use “sample_mflix.movies” namespace from the sampl
    - Give any name for the storage_file_name (“*labsynapse*” in the example)
    - Go to the “*Access keys*” tab under “*Security + networking*” and copy one of the access keys.
 
-<img width="452" alt="Picture 3" src="https://user-images.githubusercontent.com/104025201/230335335-76916e1d-77b1-49a1-b9b7-0f1c930074f6.png">
+![AzureStorageAcc](images/AzureStorageAccount.png)
 
 Save all this information in a notepad as :
 
