@@ -140,8 +140,9 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 #### Set Up Atlas Trigger
   
   **i.** Select “*Triggers*” tile under “*SERVICES*” on the left of the Atlas UI. This will open the Trigger Homepage. Select the “*Add Trigger*” button on the top right to create a new trigger for our *movies* collection.
+
+ ![Picture 10](images/AtlasTriggers.png)
   
-  ![Picture 10](https://user-images.githubusercontent.com/104025201/230365556-f393c737-d2fe-40e3-95ff-e588b5c949e2.png)
 
   **ii.** Let the default “*Database Trigger*” remain so, give a name for the trigger (*LabSynapse* in the example). Link the “*Sandbox*” cluster. Don't change any other settings.
   
