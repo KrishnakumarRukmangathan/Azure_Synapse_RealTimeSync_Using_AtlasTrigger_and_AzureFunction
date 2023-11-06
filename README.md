@@ -23,7 +23,7 @@ In this exercise, we will use “sample_mflix.movies” namespace from the sampl
   Follow steps from 1 to 4 (*Create an Atlas account*, *Deploy a free cluster*, *Add your IP to the IP access list* and *Create Database user*) to set up  the Atlas environment.   
   Also, follow step 7 “*Load Sample Data*” to load sample data to be used in the lab.
 
-![AtlasReg](images/AtlasRegistration.png)
+![AtlasReg](images/AtlasRegistration1.png)
 
 
   **Note: For this lab, add “0.0.0.0/0” to the IP access list so that Synapse can connect to MongoDB Atlas. In production scenarios, It is recommended to use Private link or VNET peering instead of the IP whitelisting.**
