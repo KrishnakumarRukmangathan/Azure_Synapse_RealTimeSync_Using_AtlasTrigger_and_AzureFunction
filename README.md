@@ -122,15 +122,11 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 ![VSCodeDeploy](https://user-images.githubusercontent.com/104025201/230351875-180d03cf-5c82-46e1-b228-820520c9777c.png)
 
 
-  **iv.** Add the storage related parameters to the Application Settings section under the Function App on Azure. Right click on “*Application Settings*” and select “*Add New Setting*”. Enter the new setting name and value when prompted. Add all the 5 storage account related values saved in Step [Fetch ADLS Gen2 Storage Details](#fetch-adls-gen2-storage-details) to the Application Settings.
+  **iv.** Add the storage related parameters to the Application Settings section under the Function App on Azure. Right click on “*Application Settings*” and select “*Add New Setting*”. Enter the new setting name and value when prompted. Add all the 5 storage account related values saved in Step [Fetch ADLS Gen2 Storage Details](#fetch-adls-gen2-storage-details) to the Application Settings. After adding all 5 new settings,click on “*Upload Local Settings*” to upload these settings to the Azure function app.
 
 <img src="images/SettingsFcn.png" width="1000" height="500" />
   
-  **v.** Deploy the application again by repeating step 4. This time look out for the deployment success message on the bottom right and select the “*Upload settings*”. This will update the newly added settings. 
-
-<img src="https://user-images.githubusercontent.com/104025201/230348257-3ff54005-493f-4ecf-9aa6-006a271fcaad.png" width="800" height="400" />
-
-   You can verify the settings by going to the Azure function and checking the “*Configuration*”  
+  **v.** Deploy the application again by repeating step 3. You can verify the settings by going to the Azure function and checking the “*Configuration*”  
    tab under the “*Settings*” section.
    
  ![Picture 7](https://user-images.githubusercontent.com/104025201/230348513-c941a71f-d26b-4343-9780-442d0c091f3d.png)
