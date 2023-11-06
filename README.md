@@ -183,7 +183,7 @@ Now that the Trigger is enabled, it will watch the *movies* collection for any â
 **iii.** Once the document is inserted , you can check in Synapse workspace, Data -> Linked -> Azure Data lake Storage Gen2. You should see a new folder created (_newcreate_ in the example) and a file with the name starting with the file name given in the storage settings in the VS Code (_labsynapse_ in the example).
 Click on the document, it will download on your local machine. Verify that it is the new document we had added to the _movies_ collection.
 
-![Picture 17](https://user-images.githubusercontent.com/104025201/230376196-523ffb33-712a-4bbf-8cee-23d242567c05.png)
+![Picture 17](images/SynapseADLS.png)
 
 **Congratulations ! You have successfully created the solution to capture changes in a collection using Atlas triggers and copy the changes to ADLS Gen2 within Synapse using Azure function.**
 
