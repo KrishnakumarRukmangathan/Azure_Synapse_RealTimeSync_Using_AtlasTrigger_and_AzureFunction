@@ -4,7 +4,7 @@ Azure Synapse is used by multiple customers as a one stop solution for their ana
 
 MongoDB has both a [Source and Sink connector](https://learn.microsoft.com/en-us/azure/data-factory/connector-mongodb?tabs=data-factory) for Synapse pipelines which enables fetching data from MongoDB or loading data into MongoDB in batches/ micro batches.
 
-However, currently there is no CDC connector for MongoDB in Synapse to keep the Synapse dedicated SQL pools synced with MongoDB data in real time. To facilitate real time analytics, MongoDB with Microsoft provided a custom solution and gave it as a few clicks and configuration based deployment as detailed [here](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/azure-synapse-analytics-integrate-mongodb-atlas). There is however still a need to provide a more seamless integration for real time sync from MongoDB to Synapse. MongoDB Atlas Trigger and Azure function can be combined to help here.
+To facilitate real time analytics, MongoDB with Microsoft provided a custom solution and gave it as a few clicks and configuration based deployment as detailed [here](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/azure-synapse-analytics-integrate-mongodb-atlas).MongoDB Atlas Trigger and Azure function based solution here provides a more seamless integration for real time sync from MongoDB to Synapse.
 
 ## Solution Overview:
 This simple solution uses [Atlas triggers](https://www.mongodb.com/docs/atlas/app-services/triggers/) and [functions](https://www.mongodb.com/docs/atlas/app-services/functions/) which abstracts the code needed to set up change streams and take an action based on the change detected.
@@ -22,8 +22,8 @@ In this exercise, we will use “sample_mflix.movies” namespace from the sampl
   Register for a new Atlas account [here](https://www.mongodb.com/docs/atlas/tutorial/create-atlas-account/#register-a-new-service-account).   
   Follow steps from 1 to 4 (*Create an Atlas account*, *Deploy a free cluster*, *Add your IP to the IP access list* and *Create Database user*) to set up  the Atlas environment.   
   Also, follow step 7 “*Load Sample Data*” to load sample data to be used in the lab.
- 
-![Picture 2](images/Atlas Registration Process.png)
+
+![AtlasReg](images/AtlasRegistration.png)
 
 
   **Note: For this lab, add “0.0.0.0/0” to the IP access list so that Synapse can connect to MongoDB Atlas. In production scenarios, It is recommended to use Private link or VNET peering instead of the IP whitelisting.**
