@@ -134,7 +134,8 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
  
   **vi.** Note the Azure function url from the deployment logs. You can also get the function url by navigating to the function in Azure and selecting “*Get Function Url*”.
   
-![Picture 9](https://user-images.githubusercontent.com/104025201/230349002-abfff2e9-54c8-45aa-84ec-0ddd36ffad1b.png)
+![Picture 9](images/FcnUrl.png)
+
 
 #### Set Up Atlas Trigger
   
