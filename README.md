@@ -119,7 +119,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
   
   **iii.** Deploy the local project from Workspace Local to Azure. Select the upload to cloud icon and select the "*Deploy to Function App*" option. It will prompt you to select the Function App name on the top bar. Once  selected, you can see the deployment progress in the OUTPUT window of the terminal.
 
-<img width="452" alt="Picture 4" src="https://user-images.githubusercontent.com/104025201/230351875-180d03cf-5c82-46e1-b228-820520c9777c.png">
+![VSCodeDeploy](https://user-images.githubusercontent.com/104025201/230351875-180d03cf-5c82-46e1-b228-820520c9777c.png)
 
 
   **iv.** Add the storage related parameters to the Application Settings section under the Function App on Azure. Right click on “*Application Settings*” and select “*Add New Setting*”. Enter the new setting name and value when prompted. Add all the 5 storage account related values saved in Step [Fetch ADLS Gen2 Storage Details](#fetch-adls-gen2-storage-details) to the Application Settings.
