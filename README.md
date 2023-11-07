@@ -124,7 +124,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
   **iv.** Add the storage related parameters to the Application Settings section under the Function App on Azure. Right click on “*Application Settings*” and select “*Add New Setting*”. Enter the new setting name and value when prompted. Add all the 5 storage account related values saved in Step [Fetch ADLS Gen2 Storage Details](#fetch-adls-gen2-storage-details) to the Application Settings. After adding all 5 new settings,click on “*Upload Local Settings*” to upload these settings to the Azure function app.
 
-<img src="images/SettingsFcn.png" width="1000" height="500" />
+<img src="images/SettingsFcn.png" width="800" height="500" />
   
   **v.** Deploy the application again by repeating step 3. You can verify the settings by going to the Azure function and checking the “*Configuration*”  
    tab under the “*Settings*” section.
